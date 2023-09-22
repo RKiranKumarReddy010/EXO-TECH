@@ -1,0 +1,11 @@
+Model Information:
+* title:	FREE - SkyBox Fantasy Village
+* source:	https://sketchfab.com/3d-models/free-skybox-fantasy-village-06f5b5dd20844b5c94bdc2b87b6247ed
+* author:	Paul (https://sketchfab.com/paul_paul_paul)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "FREE - SkyBox Fantasy Village" (https://sketchfab.com/3d-models/free-skybox-fantasy-village-06f5b5dd20844b5c94bdc2b87b6247ed) by Paul (https://sketchfab.com/paul_paul_paul) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

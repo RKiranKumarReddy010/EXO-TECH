@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pathstyle.css">
+    <title>Path</title>
+</head>
+<body>
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 600 1200">
+        <path class="line01 line" d="M 10 200  600 200" ></path>
+        <path class="line02 line" d="M 10 400  600 400" ></path>
+        <path class="line03 line" d="M 10 600  600 600" ></path>
+        <path class="line04 line" d="M 10 800  600 800" ></path>
+        <path class="line05 line" d="M 10 1000  600 1000" ></path>
+        <text class="text01" x="30" y="190"><a id="t1">Section 75</a></text>
+        <text class="text02" x="30" y="390"><a id="t2">LAW 2</a></text>
+        <text class="text03" x="30" y="590"><a id="t3">LAW 3</a></text>
+      
+        <path class="theLine" 
+              d="M -5,0
+                 Q 450 230 300 450 
+                 T 130 750
+                 Q 100 850 300 1000
+                 T 150 1200"
+              fill="none" stroke="white" stroke-width="10px" />
+        
+        
+        
+        <circle class="ball ball01" r="20" cx="50" cy="100"></circle>
+        <circle class="ball ball02" r="20" cx="278" cy="201"onclick="fun1()"></circle>
+        <circle class="ball ball03" r="20" cx="327" cy="401"onclick="fun1()"></circle>
+        <circle class="ball ball04" r="20" cx="203" cy="601"onclick="fun1()"></circle>
+      
+      </svg>
+      <div id="tri">
+        <a href="lvl1.html"><button id="b1" class="btn" href=>PLAY</button></a>
+        <button id="b2" class="btn">PLAY</button>
+        <button id="b3" class="btn">PLAY</button>
+      </div>
+
+
+
+
+
+
+      
+      <script src="https://cartomanzia-tarocchi.com/wp-content/plugins/giochi-carte/public/js/DrawSVGPlugin.min.js"></script>
+        <script src="https://cartomanzia-tarocchi.com/wp-content/plugins/giochi-carte/public/js/tarocchi-zingara-build.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js" integrity="sha512-VigP+/SyhNQ7m+09j8ue26TB1U76B/AnbaEkzT6R0Y+nOYR4GpwGZuL4ZfSPCuuVvpBNkVDOhy+R+38qtDEkWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="pathscript.js"></script>
+      
+
+
+      <div id="bg-wrap">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+        <defs>
+        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
+        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+        <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5"><animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop></radialGradient>
+        <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
+        <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5"><animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop><stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop></radialGradient>
+        </defs>
+        <!--<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
+        <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
+        <animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
+        <animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
+        <animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
+        <animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/>
+        </rect>-->
+        <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
+        <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+        </rect>
+        <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+        </rect>
+        </svg>
+      </div>
+</body>
+</html>

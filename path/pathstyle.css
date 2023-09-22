@@ -1,0 +1,64 @@
+.header-section {
+    margin: 300px auto 0;
+  }
+
+  #b1{
+    visibility: hidden;
+    color: white;
+    margin-top: 185px;
+    margin-left: 100px;
+    position: absolute;
+  }
+#b2{
+  visibility: hidden;
+  color: white;
+  margin-top: 380px;
+  margin-left: 100px;
+  position: absolute;
+}
+
+#b3{
+  visibility: hidden;
+  color: white;
+  margin-top: 580px;
+  margin-left: 100px;
+  position: absolute;
+}
+  svg {
+    max-width: 600px;
+    overflow: visible;
+    margin-top: 60vh;
+  }
+  #tri{
+    float: right;
+    height: 800px;
+    margin-top:60vh;
+    width: 65%;
+    position: relative;
+  }
+  .ball {
+    fill: white;
+    visibility: hidden;
+  }
+  
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+  }
+  text {
+    fill: white;
+    font-size: 15px;
+    font-family: "Signika Negative", sans-serif; 
+    visibility: hidden;
+  }
+  
+body {
+  height: 400vh;
+  background-image: linear-gradient(90deg,black,rgb(69, 68, 68),rgb(117, 115, 115),rgb(202, 201, 201));
+  color: white;
+}
+
+
+
+

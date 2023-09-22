@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 0;
+  }
+  @font-face {
+    font-family: exotech;
+    src: url('Gondola_SD.ttf');
+  }
+  #except{
+    margin-left:200px;
+  }
+  .container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    /* Add this to align items to the center vertically */
+    align-items: center;
+    /* Add this to separate containers */
+    margin-bottom: 20px;
+  }
+
+  .title1{
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    width: 400px;
+    /* Float images to the left */
+    float: left;
+  }
+  
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Remove the odd and even float styles for images */
+  /* image:nth-child(odd) {
+    float: left;
+  }
+  image:nth-child(even) {
+    float: right;
+  } */
+  
+  p {
+    font-size: medium;
+    /* Add margin to create space between text and images */
+    margin-left: 20px;
+  }
+  
+  
+  
+  

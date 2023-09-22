@@ -1,0 +1,83 @@
+body{
+    background-image: url('Fotor_AI.png.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: exooo;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:exooo ;
+    src: url(css/HappyMonkey-Regular.ttf);
+}
+#logins{
+    height: 400px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    left: 28%;
+    border-radius: 30px;
+    backdrop-filter: blur(25px);
+    border: 3px solid cyan;
+    position: absolute;
+}
+#leftmob{
+    margin-left:30%;
+}
+#typ1{
+    bottom:160px;
+    position:absolute;
+    height: 40px;
+    width: 200px;
+    margin-left: 9%;
+}
+#typ2{
+    bottom:110px;
+    position:absolute;
+    height: 40px;
+    width: 80px;
+    margin-left: 17%;
+}
+#typ3{
+    bottom:60px;
+    position:absolute;
+    height: 40px;
+    width: 200px;
+    margin-left: 9%;
+}
+#typ4{
+    bottom:10px;
+    position:absolute;
+    height: 40px;
+    width: 80px;
+    margin-left: 17%;
+}
+#user1{
+    position: fixed;
+    margin-top: 3px;
+    left: 35%;
+    transition:0.5s ease-in-out; 
+}
+.user2{
+    position: fixed;
+    margin-top: 20px;
+    left: 35%;
+    transition:0.5s ease-in-out; 
+}
+#user1:hover{
+    scale: 1.2;
+}
+
+#line{
+    margin-top: 100px;
+    height: 1px;
+    width: 90%;
+    margin-left: 35px;
+    background-color: black;
+}
+#captcha{
+    height:60px;
+    width: 200px;
+}
