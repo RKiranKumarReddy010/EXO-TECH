@@ -29,6 +29,7 @@
             font-weight: 900;
             border: none;
             background-color: aqua;
+            
         }
         #B1:hover{
             background-color:black;
@@ -49,6 +50,7 @@
     </style>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <div id="container">
         
     </div>
@@ -94,6 +96,20 @@
                         document.getElementById("container").style.backgroundImage = "url('imgfr/CHILDABUSE_page-0010.jpg')"
                         function alertAfter3Seconds() {
                             document.getElementById("container").style.backgroundImage = "url('imgfr/CHILDABUSE_page-0011.jpg')"
+                            function alertAfter3Seconds() {
+                                // animation finished
+                                Swal.fire({
+                                    position: 'center',
+                                    icon: 'success',
+                                    title: 'CONGRATULATION',
+                                    showConfirmButton: false,
+                                    timer: 1500
+                                  })
+                                window.location.replace("pathindex.html")
+                                setTimeout(alertAfter3Seconds, 10000);
+
+                            }
+                            setTimeout(alertAfter3Seconds, 10000);
                         }
                         setTimeout(alertAfter3Seconds, 8000);
                     }
@@ -116,10 +132,25 @@
                             document.getElementById("container").style.backgroundImage = "url('imgfr/CHILDABUSE_page-0016.jpg')"
                             function alertAfter3Seconds() {
                                 document.getElementById("container").style.backgroundImage = "url('imgfr/CHILDABUSE_page-0017.jpg')"
+                                function alertAfter3Seconds() {
+                                    // animation finished
+                                    Swal.fire({
+                                        position: 'center',
+                                        icon: 'success',
+                                        title: 'CONGRATULATION',
+                                        showConfirmButton: false,
+                                        timer: 1500
+                                      })
+                                    window.location.replace("pathindex.html")
+                                    setTimeout(alertAfter3Seconds, 10000);
+
+                                }
+                                setTimeout(alertAfter3Seconds, 10000);
                             }
                             setTimeout(alertAfter3Seconds, 3000);
                         }
                         setTimeout(alertAfter3Seconds, 6000);
+                        dev2();
                     }
                     setTimeout(alertAfter3Seconds, 4000);
                 }
@@ -127,6 +158,12 @@
             }
             setTimeout(alertAfter3Seconds, 3000);
             
+        }
+        function dev2(){
+            gsap.to("#B1,#B2",{
+                opacity:0,
+                duration:0.5,
+            })
         }
         gsap.from("#B1,#B2",{
             y:1200,
@@ -136,5 +173,6 @@
             opacity:0,
         })
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

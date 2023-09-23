@@ -4,30 +4,30 @@
 
   #b1{
     visibility: hidden;
-    color: white;
-    margin-top: 185px;
+    color: black;
+    margin-top: -130px;
     margin-left: 100px;
     position: absolute;
   }
 #b2{
   visibility: hidden;
-  color: white;
-  margin-top: 380px;
+  color:black;
+  margin-top: 70px;
   margin-left: 100px;
   position: absolute;
 }
 
 #b3{
   visibility: hidden;
-  color: white;
-  margin-top: 580px;
+  color: black;
+  margin-top: 270px;
   margin-left: 100px;
   position: absolute;
 }
   svg {
     max-width: 600px;
     overflow: visible;
-    margin-top: 60vh;
+    margin-top: 20vh;
   }
   #tri{
     float: right;
@@ -55,10 +55,14 @@
   
 body {
   height: 400vh;
-  background-image: linear-gradient(90deg,black,rgb(69, 68, 68),rgb(117, 115, 115),rgb(202, 201, 201));
+  background-image: linear-gradient(90deg, #40e0d0, #ff8c00, #ff0080);
+ 
   color: white;
 }
-
-
-
+#example {
+  font-size: 105px;
+  border-radius: 13px;
+  border: solid pink;
+  width: fit-content;
+}
 

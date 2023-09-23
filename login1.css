@@ -81,3 +81,6 @@ body{
     height:60px;
     width: 200px;
 }
+#b1,#b2,#b3{
+    position: absolute;
+}
